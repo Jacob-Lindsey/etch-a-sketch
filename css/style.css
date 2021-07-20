@@ -1,6 +1,7 @@
 #main {
     display: flex;
     flex-direction: column;
+    padding: 0 50px;
     /* background-image: url(../images/background.png);
     background-repeat: no-repeat;
     background-position: center; */
@@ -17,7 +18,7 @@
 #btn {
     border-radius: 50%;
     background: transparent;
-    width: 5.3%;
+    width: 5rem;
     height: 5rem;
     transition: background 140ms ease-in-out;
 }
@@ -33,33 +34,30 @@
 }
 
 #container {
-    width: 65%;
+
+    width: 896px;
+    height: 100%;
     margin: 0 auto;
+    font-size: 0px;
 }
 
 .grid-container {
     display: flex;
     margin: 0;
     padding: 0;
-    list-style: none;
-    justify-content: space-around;
-    line-height: 30px;
+    flex-basis: 100%;
+    justify-content: center;
 }
 
 .grid-square {
+    display: flex;
     background-color: hsl(0, 0%, 95%);
-    margin: 0.5px;
-    color: white;
-    font-weight: bold;
-    font-size: 1.5em;
-    text-align: center;
-    flex: 1 0 auto;
-    height: auto;
+    flex-basis: 100%;
+
 }
 
 .grid-square:before {
     content: '';
-    float: left;
+    display: block;
     padding-top: 100%;
 }
-
